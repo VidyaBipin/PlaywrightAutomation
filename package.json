@@ -1,0 +1,24 @@
+{
+  "name": "playwrightautomation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "run-tests": "node run-test.js",
+    "send-report": "node send-report.js",
+    "ci-tests": "node run-test-ci.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.52.0",
+    "@types/node": "^22.15.29"
+  },
+  "dependencies": {
+    "dotenv": "^16.5.0",
+    "nodemailer": "^7.0.3",
+    "playwright": "^1.52.0",
+    "xlsx": "^0.18.5"
+  }
+}

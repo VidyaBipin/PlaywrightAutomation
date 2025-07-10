@@ -1,0 +1,8 @@
+{
+  "waitForSelector": 10000,
+  "click": 5000,
+  "hover": 5000,
+  "fill": 5000,
+  "scroll": 5000,
+  "screenshot": 5000
+}

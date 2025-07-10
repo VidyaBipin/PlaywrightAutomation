@@ -1,0 +1,7 @@
+{
+  "invalidEmail": "wrong@example.com",
+  "validEmail": "admin@platform.com",
+  "invalidPassword": "wrongpass",
+  "invalidCredentialsMessage": "Invalid email or password.",
+  "blankFieldsMessage": "Email is required."
+}
