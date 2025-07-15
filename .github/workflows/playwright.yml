@@ -23,7 +23,7 @@ jobs:
       env:
           TEST_ENV: qa
           TEST_FILES: all
-          TEST_TAG: "@ui"
+          TEST_TAG: "@regression"
       run: npm run ci-tests
     - uses: actions/upload-artifact@v4
 
