@@ -23,7 +23,7 @@ jobs:
       env:
           TEST_ENV: qa
           TEST_FILES: all
-          TEST_TAG: "@smoke"
+          TEST_TAG: "@ui"
       run: npm run ci-tests
     - uses: actions/upload-artifact@v4
 

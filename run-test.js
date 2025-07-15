@@ -5,9 +5,6 @@ const { execSync } = require('child_process');
 require('dotenv').config();
 const { sendEmailReport } = require('./send-report');
 
-
-
-
 /**
  * Loads environment variables from a specific .env file based on the provided environment name.
  * If the corresponding .env file exists in the 'env' directory, it loads the variables using dotenv.
@@ -82,9 +79,8 @@ function promptUser(question) {
     input: process.stdin,
     output: process.stdout,
   });
-  // The resolve function is called when we’re ready to return a result (in this case, the user’s answer).
   return new Promise((resolve) =>
-    //This prints a question to the terminal and waits for the user to type a response.When the user presses Enter, it executes the callback function with the typed input (stored in the answer variable).
+    //This prints a question to the terminal and waits for the user to type a response.When the user presses Enter, it executes the callback function (answer) with the typed input (stored in the answer variable).
     rl.question(`\n➡️  ${question} `, (answer) => {
       // Close the readline interface and resolve the promise with the user's input.
       rl.close();
