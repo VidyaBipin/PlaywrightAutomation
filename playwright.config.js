@@ -32,7 +32,7 @@ export default defineConfig({
       args: ['--start-maximized'], // Request maximized mode
     },
     trace: 'retain-on-failure',
-    headless: false,
+    headless: true,
     screenshot: 'only-on-failure',
     video: 'retain-on-failure',
     timeout: 480000,
