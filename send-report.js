@@ -16,16 +16,14 @@ async function sendEmailReport() {
     // Set up email transporter
     const transporter = nodemailer.createTransport({
         service: 'gmail',
-        auth: {
-            user: 'vidya.s@codelynks.com',
-            pass: 'ehrqhzmicsprtmzs', // Replace with your app pass from security->2step verification->app passwords
-        },
+        user: process.env.EMAIL_USER,
+        pass: process.env.EMAIL_PASS,
     });
 
     // Mail options
     const mailOptions = {
-        from: 'vidya.s@codelynks.com', // Sender's email
-        to: 'vidya.s@codelynks.com', // Main recipient
+        from: process.env.EMAIL_USER, // Sender's email
+        to: process.env.EMAIL_RECIPIENT, // Main recipient
         //cc: ccRecipients.length > 0 ? ccRecipients.join(',') : undefined, // Add CC if available
         subject: 'Playwright Test Report', // Email subject
         html: `
