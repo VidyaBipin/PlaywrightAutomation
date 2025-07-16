@@ -1,6 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 const nodemailer = require('nodemailer');
+require('dotenv').config();
 
 //const ccRecipients = ['neethu.c@codelynks.com', 'harmya.k@codelynks.com'];
 
