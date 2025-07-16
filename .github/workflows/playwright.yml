@@ -23,7 +23,7 @@ jobs:
       env:
           TEST_ENV: qa
           TEST_FILES: all
-          TEST_TAG: "@ui"
+          TEST_TAG: "@regression"
           EMAIL_USER: ${{ secrets.EMAIL_USER }}
           EMAIL_PASS: ${{ secrets.EMAIL_PASS }}
       run: npm run ci-tests
